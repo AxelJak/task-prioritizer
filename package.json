@@ -1,0 +1,22 @@
+{
+  "name": "task-prioritizer",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.61.0",
+    "@google/generative-ai": "^0.24.1",
+    "idb": "^8.0.3",
+    "lit": "^3.3.1",
+    "openai": "^5.20.3"
+  },
+  "devDependencies": {
+    "typescript": "~5.8.3",
+    "vite": "^7.1.2"
+  }
+}

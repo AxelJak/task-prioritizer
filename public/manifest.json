@@ -1,0 +1,27 @@
+{
+  "name": "AI Task Prioritizer",
+  "short_name": "TaskPrioritizer",
+  "description": "AI-powered task prioritizer using Anthropic's Claude API",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#007bff",
+  "background_color": "#f8f9fa",
+  "orientation": "portrait-primary",
+  "categories": ["productivity", "utilities"],
+  "icons": [
+    {
+      "src": "/vite.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/vite.svg",
+      "sizes": "1280x720",
+      "type": "image/svg+xml",
+      "form_factor": "wide"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+:root {
+  /* Typography */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  
+  /* Color Variables */
+  --primary-color: #007bff;
+  --primary-color-hover: #0056b3;
+  --secondary-color: #6c757d;
+  --secondary-color-hover: #545b62;
+  
+  --text-color: #333333;
+  --text-secondary: #666666;
+  --text-tertiary: #999999;
+  
+  --bg-color: #f8f9fa;
+  --card-bg: #ffffff;
+  --card-border: #e0e0e0;
+  --input-border: #e0e0e0;
+  --category-bg: #f8f9fa;
+  --category-border: #e9ecef;
+  --hover-bg: rgba(0, 0, 0, 0.05);
+
+  /* Text rendering */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: #ffffff;
+    --text-secondary: #cccccc;
+    --text-tertiary: #999999;
+    
+    --bg-color: #1a1a1a;
+    --card-bg: #2d2d2d;
+    --card-border: #404040;
+    --input-border: #404040;
+    --category-bg: #2d2d2d;
+    --category-border: #404040;
+    --hover-bg: rgba(255, 255, 255, 0.05);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--card-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
+
+/* Focus styles for accessibility */
+*:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* Button focus styles */
+button:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* Remove default button styles */
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Input and textarea base styles */
+input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Print styles */
+@media print {
+  :root {
+    --bg-color: white;
+    --card-bg: white;
+    --text-color: black;
+    --card-border: #cccccc;
+  }
+  
+  .settings-btn,
+  .export-btn,
+  .btn {
+    display: none !important;
+  }
+}
